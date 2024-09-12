@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Horizontal Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- Vertical Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="408dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end|center_vertical"
+        android:hint="@string/textZero"
+        android:textColor="#333232"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <LinearLayout
+        android:id="@+id/rowFirst"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textClear"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnPosNeg"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textPositiveNegative"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnBackspace"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textBackspace"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textDivide"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconTint="?attr/colorButtonNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowSecond"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowFirst">
+
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textSeven"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textEight"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnNine"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textNine"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textMultiply"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconTint="?attr/colorButtonNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowThird"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowSecond">
+
+        <Button
+            android:id="@+id/btnFour"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textFour"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnFive"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textFive"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnSix"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textSix"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textMinus"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconTint="?attr/colorButtonNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFourth"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowThird">
+
+        <Button
+            android:id="@+id/btnOne"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textOne"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textTwo"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnThree"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textThree"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textPlus"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconTint="?attr/colorButtonNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFifth"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowFourth">
+
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textZero"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textDecimal"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <Button
+            android:id="@+id/btnResult"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="@string/textResult"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="414dp"
+        android:layout_height="68dp"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Calculator"
+        app:titleTextColor="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

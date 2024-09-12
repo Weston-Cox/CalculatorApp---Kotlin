@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Homework 1 Calculator App</string>
+    <string name="textClear">C</string>
+    <string name="textZero">0</string>
+    <string name="textPositiveNegative">+/-</string>
+    <string name="textBackspace"><![CDATA[<-]]></string>
+    <string name="textDivide">/</string>
+    <string name="textSeven">7</string>
+    <string name="textEight">8</string>
+    <string name="textNine">9</string>
+    <string name="textMultiply">*</string>
+    <string name="textFour">4</string>
+    <string name="textFive">5</string>
+    <string name="textSix">6</string>
+    <string name="textMinus">-</string>
+    <string name="textOne">1</string>
+    <string name="textTwo">2</string>
+    <string name="textThree">3</string>
+    <string name="textPlus">+</string>
+    <string name="textResultOutput">0</string>
+    <string name="textDecimal">.</string>
+    <string name="textResult">=</string>
+</resources>
